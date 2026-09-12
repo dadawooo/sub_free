@@ -18,19 +18,15 @@ proxies:
   servername: sync-bridge.org
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 162.159.91.222
-  port: 443
+  server: 195.162.69.203
+  port: 8443
   udp: true
   type: vless
-  uuid: 50414e45-4c5f-5a45-5553-723a643df685
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
   tls: true
-  servername: n3zaxce7u0es.crzl48eiuses.workers.dev
+  servername: 195-162-69-203.sslip.io
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/723a643df685/loc-0
-    headers:
-      Host: n3zaxce7u0es.crzl48eiuses.workers.dev
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
