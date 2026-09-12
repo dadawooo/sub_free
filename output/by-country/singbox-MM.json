@@ -4,26 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇱 智利 (Chile) 01 - xiaohe",
-      "server": "64.176.2.21",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "xBStBEVqvGwHPocc"
+      "type": "trojan",
+      "tag": "🇲🇲 缅甸 (Myanmar) 01 - xiaohe",
+      "server": "z-sg2.6send.com",
+      "server_port": 10046,
+      "password": "ultra@kWZdAzt_IH593eGLRjdxnBZ0",
+      "tls": {
+        "enabled": true,
+        "server_name": "z-sg2.6send.com",
+        "insecure": true
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇱 智利 (Chile) 01 - xiaohe"
+        "🇲🇲 缅甸 (Myanmar) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇱 智利 (Chile) 01 - xiaohe"
+        "🇲🇲 缅甸 (Myanmar) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

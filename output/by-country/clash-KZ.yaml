@@ -5,20 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
-  server: 111.88.143.139
-  port: 51940
+  server: 178.236.16.98
+  port: 35728
   udp: true
   type: vless
-  uuid: 03464802-b517-404b-b15c-7750ffc5e78f
+  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
   tls: true
   reality-opts:
-    public-key: uPHvFb_vZ3DKL-8Et_e9OliZskdSV5U1NZ66tHfC-2Y
-    short-id: fd7f
+    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+    short-id: 69a2
   servername: yahoo.com
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
 proxy-groups:
 - name: PROXIES
   type: select

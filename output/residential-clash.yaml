@@ -5,25 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  server: 36.224.174.174
+  server: 36.224.152.189
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
-  server: 216.36.124.176
-  port: 29513
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  server: 22f60053-tlheo0-tzxeoy-hns7.hk3.hyhuawei.com
+  port: 443
   udp: true
   type: vless
-  uuid: f618d6e9-c6af-40b8-bc7a-bbf450586784
-  flow: xtls-rprx-vision
+  uuid: 6857f1bc-f27b-11ea-87ad-f23c913c8d2b
   tls: true
   reality-opts:
-    public-key: rSI9mgtOco9D39xdbX64nv2J2BRBGQpgCOi4opw8mCo
-    short-id: 6ba85179e30d4fc2
-  servername: addons.mozilla.org
-  client-fingerprint: random
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 03 (家宽) - xiaohe
   server: roma2.moritech.net
   port: 443
@@ -34,14 +32,14 @@ proxies:
   tls: true
   servername: roma2.moritech.net
   skip-cert-verify: false
-  client-fingerprint: edge
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
@@ -49,7 +47,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
