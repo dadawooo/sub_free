@@ -4,14 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇸🇩 SD 01 - xiaohe",
-      "server": "z-jp1.1card.cc",
-      "server_port": 10012,
-      "password": "ultra@kWZdAzt_IH593eGLRjdxnBZ0",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
+      "server": "hk02.xn--9kq85xcu6b.com",
+      "server_port": 65534,
+      "password": "45dae7e6-4573-4e6b-a1f3-57b3bbaf990d",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "hk02.xn--9kq85xcu6b.com",
         "insecure": true
       }
     },
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇩 SD 01 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇩 SD 01 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
