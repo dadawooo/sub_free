@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
-      "server": "dlbgwqqngrjbwan.jiedddym.com",
-      "server_port": 42868,
-      "uuid": "6dbb8854-17a5-4684-b930-c11f022975ec",
+      "tag": "🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe",
+      "server": "131.123.25.3",
+      "server_port": 443,
+      "uuid": "3a22ca95-bd99-4c6b-a799-f8f73930ea05",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "fr.convert-flow.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "GLtdhq3ZSKYlJv62ye5dFKfjI3UF9mBIGOl5ms75rVA",
-          "short_id": "747a75eb5ecef8"
+          "public_key": "8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w",
+          "short_id": "00a61d55a07de885"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe"
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe"
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
