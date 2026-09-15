@@ -4,24 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe",
-      "server": "162.159.152.4",
+      "type": "trojan",
+      "tag": "🇭🇷 克罗地亚 (Croatia) 01 - xiaohe",
+      "server": "213.182.199.137",
       "server_port": 443,
-      "uuid": "f2a73750-3087-48ff-a763-1348c15dce68",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "rayan-007.maxima.dpdns.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "www.pleadcourt.org",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
+        "path": "/assignment",
         "headers": {
-          "Host": "rayan-007.maxima.dpdns.org"
+          "Host": "www.pleadcourt.org"
         }
       }
     },
@@ -30,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe"
+        "🇭🇷 克罗地亚 (Croatia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe"
+        "🇭🇷 克罗地亚 (Croatia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

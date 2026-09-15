@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
-  server: 3.9.135.156
-  port: 51847
+  server: 82c0f.tornadonext.com
+  port: 443
   udp: true
   type: vless
-  uuid: 391a01e9-b664-407b-9158-610fab3f5920
+  uuid: aea9e420-de22-4dcb-93b8-af1f71a3c264
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
-    short-id: 0eec442e7b34d2f2
-  servername: www.tesla.com
-  client-fingerprint: chrome
+    public-key: R_ax16JLUFGtv5quE08v6l35O7B_-3j5C31ejUBElRU
+    short-id: 6bcd199b
+  servername: 82c0f.tornadonext.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
