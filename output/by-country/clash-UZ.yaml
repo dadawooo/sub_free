@@ -4,28 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 188.114.98.0
-  port: 443
+- name: 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe
+  server: 189.74.97.43
+  port: 2087
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
+  type: vless
+  uuid: 10f7eb2d-d96d-4778-9d36-aff11e9d6629
   network: ws
   ws-opts:
-    path: /assignment
+    path: /73b6faea2d00
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe
 rules:
 - MATCH,PROXIES
