@@ -15,7 +15,7 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   server: 45.9.2.171
   port: 8443
@@ -30,7 +30,7 @@ proxies:
   grpc-opts:
     grpc-service-name: ''
 - name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
-  server: preview.netraidly.ru
+  server: 5.253.42.163
   port: 40443
   udp: true
   type: vless
