@@ -46,22 +46,24 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
-      "server": "estomin1.vodniki.monster",
+      "server": "94.183.170.135",
       "server_port": 443,
-      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
-      "flow": "xtls-rprx-vision",
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
+      "server": "217.60.182.79",
+      "server_port": 443,
+      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
       "tls": {
         "enabled": true,
-        "server_name": "estomin1.vodniki.monster",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk",
-          "short_id": "d98e7afec9c0c359"
-        }
+        "server_name": "cabinet.wwwinternetvideo.click",
+        "insecure": true
       }
     },
     {
@@ -71,7 +73,8 @@
         "auto",
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe"
       ]
     },
     {
@@ -80,7 +83,8 @@
       "outbounds": [
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
