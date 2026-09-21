@@ -14,7 +14,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -24,22 +24,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-      "server": "151.242.189.162",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false
-      },
+      "server": "118.193.57.167",
+      "server_port": 49667,
+      "uuid": "d46bf492-45f4-4c33-82d1-ea2a1cb54eb6",
+      "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/chat?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
+        "path": "/d46bf492"
       }
     },
     {

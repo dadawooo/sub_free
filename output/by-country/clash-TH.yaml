@@ -15,21 +15,18 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: safari
 - name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  server: 151.242.189.162
-  port: 443
+  server: 118.193.57.167
+  port: 49667
   udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
+  type: vmess
+  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /chat?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
+    path: /d46bf492
 proxy-groups:
 - name: PROXIES
   type: select
