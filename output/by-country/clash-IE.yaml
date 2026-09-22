@@ -5,6 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
+  server: uk1.miyazono-kaori.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: e125bbfe-1307-471d-b21c-c1afe0c1de98
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: _dsOu_vxEU7pY3sIeGJxIpR0Ac2KoqIyBor2Bx0CwGA
+    short-id: d923
+  servername: www.bp.com
+  client-fingerprint: chrome
+- name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
+  server: uk2.miyazono-kaori.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: e125bbfe-1307-471d-b21c-c1afe0c1de98
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QdYs12kmf0mAXNOEPgMpLN5dbZUlgvRK2zCqynOmqBk
+    short-id: '20'
+  servername: www.bp.com
+  client-fingerprint: chrome
+- name: 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
   server: 3.9.135.156
   port: 51847
   udp: true
@@ -17,17 +43,6 @@ proxies:
     short-id: 0eec442e7b34d2f2
   servername: www.tesla.com
   client-fingerprint: chrome
-- name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
-  server: 50.7.5.186
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ireland-new.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +50,7 @@ proxy-groups:
   - AUTO
   - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -42,5 +58,6 @@ proxy-groups:
   proxies:
   - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
 rules:
 - MATCH,PROXIES
