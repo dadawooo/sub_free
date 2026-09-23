@@ -24,8 +24,48 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "server": "193.23.201.65",
+      "server_port": 5432,
+      "uuid": "e84e0918-68ca-4fcc-a1d1-b566fd9ac7ee",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "193.23.201.65",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
+      "server": "31.76.80.230",
+      "server_port": 8443,
+      "uuid": "d544c858-b1ba-45b2-8868-8197daf2a6ee",
+      "tls": {
+        "enabled": true,
+        "server_name": "fin.luxes.network",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assets"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
       "server": "iq5ny.pleiades.codes",
       "server_port": 8443,
       "password": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
@@ -34,35 +74,6 @@
         "server_name": "iq5ny.pleiades.codes",
         "insecure": true
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-      "server": "62.238.103.54",
-      "server_port": 2083,
-      "uuid": "d78de562-872e-43dd-be48-e9d7b06c87a3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "tADYkZWWksM_mCqqwlRHCciSCXnP3JMYrPi5eoRHh2s",
-          "short_id": "d059fb98048c5318"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
-      "server": "p1tun3.greewebservices.ir",
-      "server_port": 2070,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ao5znrhEwVqoJy-l7AVvgw"
     },
     {
       "type": "selector",
