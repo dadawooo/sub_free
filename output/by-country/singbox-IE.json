@@ -13,7 +13,7 @@
       "tls": {
         "enabled": true,
         "server_name": "ireland-new-ded1.failspace.top",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -38,12 +38,20 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 03 - xiaohe",
+      "server": "16.60.17.14",
+      "server_port": 22224,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
+        "🇮🇪 爱尔兰 (Ireland) 03 - xiaohe"
       ]
     },
     {
@@ -51,7 +59,8 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
+        "🇮🇪 爱尔兰 (Ireland) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
