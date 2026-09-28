@@ -6,23 +6,77 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
-      "server": "fbsv6.guardora.pro",
+      "server": "104.21.79.199",
       "server_port": 443,
-      "uuid": "bc5ec86c-3e65-4272-994c-59a924c72a68",
+      "uuid": "38d6b629-64c2-4c31-a10d-26eb3a2a053d",
       "tls": {
         "enabled": true,
-        "server_name": "fbsv6.guardora.pro",
+        "server_name": "lHNs3ww2-CXQ-Gj1vvOBkEPIg4noPkc.hqu4v38Hi9iFtcp6mZfMX-3bmx.WoRKeRS.dEV",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/ws",
+        "path": "/vl/cxl8Wn1ylnsk63nJ0",
         "headers": {
-          "Host": "fbsv6.guardora.pro"
+          "Host": "lhns3ww2-cxq-gj1vvobkepig4nopkc.hqu4v38hi9iftcp6mzfmx-3bmx.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
+      "server": "172.67.133.170",
+      "server_port": 443,
+      "uuid": "7c6a566b-4c4a-b8f2-1719-a3096b424141",
+      "tls": {
+        "enabled": true,
+        "server_name": "peekconfigg.vipserver1-39d.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sync",
+        "headers": {
+          "Host": "peekconfigg.vipserver1-39d.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
+      "server": "176.32.35.2",
+      "server_port": 10090,
+      "method": "aes-256-gcm",
+      "password": "895b4b796a357570"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - xiaohe",
+      "server": "45.12.75.242",
+      "server_port": 26424,
+      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ya.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "short_id": "23103e1e"
         }
       }
     },
@@ -31,14 +85,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 04 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
