@@ -4,25 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "smart.avenone.ir",
-      "server_port": 1085,
-      "uuid": "0c1b7949-fe09-43d9-863f-2c031f66bfc1"
+      "type": "shadowsocks",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
+      "server": "45.207.207.25",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "gj1+XKulKV0nmw6IThckOkkJh5DSM7+C"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

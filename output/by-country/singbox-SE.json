@@ -5,21 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "92b6d0ff54070b56.IROnlY4l.Ir",
+      "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
+      "server": "34.51.240.236",
       "server_port": 443,
-      "uuid": "0b47cd2c-cd11-4398-a323-ef4a08475e77",
+      "uuid": "788950f8-dbd9-4234-a42c-a7204665ce9f",
       "tls": {
         "enabled": true,
-        "server_name": "play.google.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "pLbqDSeEe7biTe6b-w6SOLl2SiRxIBjHMfqUzuRR3Ew",
-          "short_id": "37d86205006fe1fb"
+          "public_key": "SOvacyM6CABhBHYdOHvhXbkNLHJBHuAkoJj2Z13xKlE",
+          "short_id": "b4a6faed784ff461"
         }
       }
     },
@@ -28,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
