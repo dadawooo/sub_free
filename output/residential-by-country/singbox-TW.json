@@ -5,24 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
-      "server": "79.137.199.52",
-      "server_port": 21,
-      "uuid": "763e2ddd-c830-4f4f-801c-f6f2c3418d4f",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+      "server": "172.66.152.4",
+      "server_port": 443,
+      "uuid": "08aaab35-a42d-4755-a03e-20c18cb1b3e8",
       "tls": {
         "enabled": true,
-        "server_name": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "argo6.5671234.xyz",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/@Marisa_kristi",
+        "path": "/e8e2cecb6188f7fb",
         "headers": {
-          "Host": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
+          "Host": "argo6.5671234.xyz"
         }
       }
     },
@@ -31,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
