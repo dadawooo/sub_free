@@ -5,16 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.57.25
+  server: 104.21.72.213
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.volumeroot.com
+  type: vless
+  uuid: a2c57a6c-dacb-44d1-9055-fb42d4c888a5
+  tls: true
+  servername: pew.dianawmoon.dpdns.org
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
+  client-fingerprint: random
+  network: httpupgrade
+  httpupgrade-opts:
+    path: /27729/dianahtupgd
+    headers:
+      Host: pew.dianawmoon.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
