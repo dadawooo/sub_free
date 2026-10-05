@@ -31,6 +31,14 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  server: 185.174.137.172
+  port: 8446
+  udp: true
+  type: hysteria2
+  password: e9dc02d400b67c727aca1620
+  sni: 185.174.137.172
+  skip-cert-verify: true
+- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
   server: 193.238.154.5
   port: 443
   udp: true
@@ -52,6 +60,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - xiaohe
   - 🇪🇸 西班牙 (Spain) 03 - xiaohe
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,5 +70,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - xiaohe
   - 🇪🇸 西班牙 (Spain) 03 - xiaohe
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 05 - xiaohe
 rules:
 - MATCH,PROXIES

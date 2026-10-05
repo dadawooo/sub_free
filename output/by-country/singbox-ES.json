@@ -40,8 +40,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇪🇸 西班牙 (Spain) 04 - xiaohe",
+      "server": "185.174.137.172",
+      "server_port": 8446,
+      "password": "e9dc02d400b67c727aca1620",
+      "tls": {
+        "enabled": true,
+        "server_name": "185.174.137.172",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - xiaohe",
       "server": "193.238.154.5",
       "server_port": 443,
       "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
@@ -67,7 +79,8 @@
         "🇪🇸 西班牙 (Spain) 01 - xiaohe",
         "🇪🇸 西班牙 (Spain) 02 - xiaohe",
         "🇪🇸 西班牙 (Spain) 03 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 04 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 04 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 05 - xiaohe"
       ]
     },
     {
@@ -77,7 +90,8 @@
         "🇪🇸 西班牙 (Spain) 01 - xiaohe",
         "🇪🇸 西班牙 (Spain) 02 - xiaohe",
         "🇪🇸 西班牙 (Spain) 03 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 04 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 04 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,21 +6,21 @@
     {
       "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
-      "server": "193.163.203.170",
+      "server": "138.124.180.137",
       "server_port": 443,
-      "uuid": "11aabba0-5fd1-4f15-8068-74c1a466cefc",
+      "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "yandex.ru",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o",
-          "short_id": "b28db60d77c50b4f"
+          "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
+          "short_id": "33acba1b"
         }
       }
     },
