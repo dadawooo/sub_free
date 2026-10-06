@@ -4,15 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vmess",
       "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-      "server": "211.20.156.191",
-      "server_port": 28145,
-      "password": "i99Cef",
+      "server": "89.39.161.157",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "ctldl.windowsupdate.com",
-        "insecure": true
+        "server_name": "aksai.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "aksai.org"
+        }
       }
     },
     {
