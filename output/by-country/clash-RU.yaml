@@ -5,30 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 162.159.0.169
+  server: 104.18.46.234
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  server: 172.64.229.170
   port: 2086
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 172.64.32.108
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
+    path: ?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 172.64.52.6
-  port: 2082
+  server: 172.67.145.5
+  port: 443
+  udp: true
+  type: vless
+  uuid: 20836693-ea23-4f40-a1e7-48a6da897917
+  tls: true
+  servername: netra-85a0ca.shoameni19.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/bluTTbb7MO8rvX1COEYH4WW4qzbr2aui
+    headers:
+      Host: netra-85a0ca.shoameni19.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  server: 162.159.45.19
+  port: 2095
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -37,15 +52,14 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 103.88.243.142
-  port: 11592
-  udp: true
-  type: hysteria2
-  password: 41edb44c8e
-  sni: srv-17e124.21freedom.net
-  skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  server: 194.87.196.13
+  port: 10771
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 4938e975724d0ed1
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -67,6 +81,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -77,5 +92,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
 rules:
 - MATCH,PROXIES
