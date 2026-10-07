@@ -5,13 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
-  server: 185.174.137.172
-  port: 8446
+  server: 140.174.184.5
+  port: 8388
   udp: true
-  type: hysteria2
-  password: e9dc02d400b67c727aca1620
-  sni: 185.174.137.172
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
   server: 108.181.121.226
   port: 8388
@@ -45,18 +44,6 @@ proxies:
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
 - name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
-  server: es4.h1cloud.net
-  port: 25047
-  udp: true
-  type: vless
-  uuid: 55a2940a-ae07-40b4-ab32-4d3e0617731f
-  tls: true
-  reality-opts:
-    public-key: opG0oNW-PMHi8V4E0101eEqOqPlZVKCuRkF6dcWeqBU
-    short-id: 8b7227d48365dda9
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
   server: 46.28.71.247
   port: 443
   udp: true
@@ -69,13 +56,17 @@ proxies:
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 07 - xiaohe
-  server: 140.174.184.5
-  port: 8388
+- name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
+  server: 154.62.226.101
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
+  type: vless
+  uuid: 5b5e4cbf-2366-499a-8327-0cd9918c687d
+  flow: xtls-rprx-vision
+  tls: true
+  servername: static.surfweb.club
+  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,7 +78,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
   - 🇪🇸 西班牙 (Spain) 05 - xiaohe
   - 🇪🇸 西班牙 (Spain) 06 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,6 +89,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
   - 🇪🇸 西班牙 (Spain) 05 - xiaohe
   - 🇪🇸 西班牙 (Spain) 06 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 07 - xiaohe
 rules:
 - MATCH,PROXIES

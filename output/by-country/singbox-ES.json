@@ -4,16 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-      "server": "185.174.137.172",
-      "server_port": 8446,
-      "password": "e9dc02d400b67c727aca1620",
-      "tls": {
-        "enabled": true,
-        "server_name": "185.174.137.172",
-        "insecure": true
-      }
+      "server": "140.174.184.5",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "qItG8SueYQcP"
     },
     {
       "type": "shadowsocks",
@@ -66,26 +62,6 @@
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 05 - xiaohe",
-      "server": "es4.h1cloud.net",
-      "server_port": 25047,
-      "uuid": "55a2940a-ae07-40b4-ab32-4d3e0617731f",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "opG0oNW-PMHi8V4E0101eEqOqPlZVKCuRkF6dcWeqBU",
-          "short_id": "8b7227d48365dda9"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 06 - xiaohe",
       "server": "46.28.71.247",
       "server_port": 443,
       "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
@@ -105,12 +81,25 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 07 - xiaohe",
-      "server": "140.174.184.5",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - xiaohe",
+      "server": "154.62.226.101",
+      "server_port": 443,
+      "uuid": "5b5e4cbf-2366-499a-8327-0cd9918c687d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "static.surfweb.club",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
     },
     {
       "type": "selector",
@@ -122,8 +111,7 @@
         "🇪🇸 西班牙 (Spain) 03 - xiaohe",
         "🇪🇸 西班牙 (Spain) 04 - xiaohe",
         "🇪🇸 西班牙 (Spain) 05 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 06 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 07 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 06 - xiaohe"
       ]
     },
     {
@@ -135,8 +123,7 @@
         "🇪🇸 西班牙 (Spain) 03 - xiaohe",
         "🇪🇸 西班牙 (Spain) 04 - xiaohe",
         "🇪🇸 西班牙 (Spain) 05 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 06 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 07 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
