@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
   server: 213.183.63.60
-  port: 9098
+  port: 9030
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
+  password: GeregetR8cvQHzYr
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
   server: 136.175.82.85
   port: 18775

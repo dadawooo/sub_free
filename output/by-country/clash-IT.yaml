@@ -25,6 +25,20 @@ proxies:
   cipher: aes-256-gcm
   password: itzvpn@321
 - name: 🇮🇹 意大利 (Italy) 04 - xiaohe
+  server: 91.201.65.122
+  port: 9002
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: b8KkNDjEd5QqFyRm
+- name: 🇮🇹 意大利 (Italy) 05 - xiaohe
+  server: 91.201.65.122
+  port: 9053
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: SBM7R883jBmnqe6C
+- name: 🇮🇹 意大利 (Italy) 06 - xiaohe
   server: 57.131.38.163
   port: 2053
   udp: true
@@ -36,7 +50,7 @@ proxies:
     short-id: 5b8a942318178e7b
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 05 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 07 - xiaohe
   server: 82.118.16.187
   port: 443
   udp: true
@@ -49,13 +63,6 @@ proxies:
     short-id: cd6065902eea7a02
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 06 - xiaohe
-  server: 91.201.65.122
-  port: 9097
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Sn5B7jTqr76aCJT8
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,6 +74,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 04 - xiaohe
   - 🇮🇹 意大利 (Italy) 05 - xiaohe
   - 🇮🇹 意大利 (Italy) 06 - xiaohe
+  - 🇮🇹 意大利 (Italy) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,5 +86,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 04 - xiaohe
   - 🇮🇹 意大利 (Italy) 05 - xiaohe
   - 🇮🇹 意大利 (Italy) 06 - xiaohe
+  - 🇮🇹 意大利 (Italy) 07 - xiaohe
 rules:
 - MATCH,PROXIES
