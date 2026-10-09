@@ -12,7 +12,23 @@
       "tls": {
         "enabled": true,
         "server_name": "cz.h2.cleanersaz.help",
-        "insecure": false
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
+      "server": "194.87.6.192",
+      "server_port": 2097,
+      "password": "gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU",
+      "tls": {
+        "enabled": true,
+        "server_name": "ger6.fytpn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       }
     },
     {
@@ -20,14 +36,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe",
+        "🇨🇿 捷克 (Czech) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe",
+        "🇨🇿 捷克 (Czech) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

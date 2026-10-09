@@ -13,7 +13,7 @@ proxies:
   sni: 140.238.213.114
   skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
-  server: 82.38.64.229
+  server: 82.38.64.239
   port: 8443
   udp: true
   type: hysteria2
@@ -31,21 +31,7 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  server: ns.l90909l.vip
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 4f4ba283-2dd7-4eda-9211-63ae357373cf
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: id.vk.com
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless-grpc-reality
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,7 +40,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,6 +48,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
 rules:
 - MATCH,PROXIES
