@@ -4,18 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
-      "server": "188.220.205.44",
-      "server_port": 2097,
-      "password": "gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU",
+      "server": "138.124.180.137",
+      "server_port": 443,
+      "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "lit.fytpn.com",
-        "insecure": false,
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
+          "short_id": "33acba1b"
         }
       }
     },
@@ -41,12 +46,29 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe",
+      "server": "188.220.205.44",
+      "server_port": 2097,
+      "password": "gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU",
+      "tls": {
+        "enabled": true,
+        "server_name": "lit.fytpn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe",
+        "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe"
       ]
     },
     {
@@ -54,7 +76,8 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe",
+        "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
