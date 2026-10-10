@@ -5,32 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 2.26.225.89
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  tls: true
-  servername: pl.flen-vpn.xyz
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: 95.85.253.241
-  port: 2087
+  port: 2053
   udp: true
   type: vless
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   tls: true
   servername: 95.85.253.241
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 202.78.163.237
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: 95.85.253.241
   port: 2083
   udp: true
@@ -40,8 +24,16 @@ proxies:
   servername: 95.85.253.241
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: 177.1.192.72
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+  server: 202.78.163.237
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: 177.1.192.74
   port: 443
   udp: true
   type: vless
@@ -49,18 +41,34 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
-    short-id: 46455ff0
+    public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
+    short-id: 770618b6
   servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
-  server: polandsixsebenrkn010.qcloud.surf
-  port: 21384
+  client-fingerprint: randomized
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  server: 2.26.225.89
+  port: 8443
   udp: true
-  type: hysteria2
-  password: 8bd04756-3beb-4348-82c9-d35453df50ce
-  sni: polandsixsebenrkn010.qcloud.surf
+  type: vless
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  tls: true
+  servername: pl.flen-vpn.xyz
   skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
+  server: 91.215.43.248
+  port: 443
+  udp: true
+  type: vless
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  tls: true
+  servername: my.kempekl.online
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    headers:
+      Host: my.kempekl.online
 - name: 🇵🇱 波兰 (Poland) 07 - xiaohe
   server: 144.31.49.47
   port: 443
@@ -68,7 +76,7 @@ proxies:
   type: hysteria2
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 08 - xiaohe
   server: 195.133.80.152
   port: 443
@@ -81,7 +89,7 @@ proxies:
     public-key: UcFVpzbYTy8Iym6ZnCAtLQK-MeRg6wZuyni4xEOKG18
     short-id: 0da7e14db353e7d0
   servername: pl3.nztvpn.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
