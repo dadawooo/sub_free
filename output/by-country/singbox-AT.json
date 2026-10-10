@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe",
-      "server": "157.228.69.91",
-      "server_port": 27313,
-      "password": "8bd04756-3beb-4348-82c9-d35453df50ce",
+      "tag": "🇦🇹 奥地利 (Austria) 01 - xiaohe",
+      "server": "5.254.51.109",
+      "server_port": 9443,
+      "password": "Hc9_NX924RE_Mn948rgrwiub_m93V84nll",
       "tls": {
         "enabled": true,
-        "server_name": "spainspeedboostjbl88.qcloud.surf",
+        "server_name": "keyhop-voxility-at.dynuddns.com",
         "insecure": true
       }
     },
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
