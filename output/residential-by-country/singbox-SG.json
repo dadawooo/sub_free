@@ -5,14 +5,14 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
-      "server": "104.165.205.21",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tag": "🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe",
+      "server": "s3.huhiuh.space",
+      "server_port": 18642,
+      "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
       "tls": {
         "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
+        "server_name": "s3.huhiuh.space",
+        "insecure": true
       }
     },
     {
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
