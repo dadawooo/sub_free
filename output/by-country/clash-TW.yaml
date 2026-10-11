@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
-  server: 103.115.109.49
+  server: vpn-tw-002.fastervpn.world
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a
+  sni: 127.0.0.1
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   server: 60.248.219.78
@@ -26,40 +26,6 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-tw-002.fastervpn.world%5cu0026insecure%3d1%5cu0026allowinsecure%3d1
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  server: fsjp19.46852.top
-  port: 13459
-  udp: true
-  type: vless
-  uuid: 1b0ef044-585e-4b57-ab38-8b97e4eef8fa
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: hNCjtGGnj9dBM_b9_naRrpaMxW6uPJshmi3cxiKLnnw
-    short-id: b9
-  servername: cloudflare.com
-  client-fingerprint: ios
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
-  server: fsjp19.46852.top
-  port: 13460
-  udp: true
-  type: vless
-  uuid: 1b0ef044-585e-4b57-ab38-8b97e4eef8fa
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: aMWflVU1irMrKvFSbdiD4CwJd7cvHPkjKu7ip9r-EHw
-    short-id: 05282fc98fd39400
-  servername: cloudflare.com
-  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,9 +33,6 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -77,8 +40,5 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
 rules:
 - MATCH,PROXIES
