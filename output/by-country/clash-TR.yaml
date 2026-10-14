@@ -19,8 +19,8 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 172.67.176.3
-  port: 2053
+  server: 188.114.98.0
+  port: 443
   udp: true
   type: trojan
   password: e309e031-991e-4656-9934-44d10deb8fd8

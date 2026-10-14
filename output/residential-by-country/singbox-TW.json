@@ -4,28 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "188.114.96.3",
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+      "server": "fujrdt.d6f54hd1j.cc",
       "server_port": 443,
-      "password": "pjg&JybcgFsca,+gQMa",
+      "uuid": "d877dc6f-7323-4b47-a7dd-14228cbae854",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "022XW1dMCzG0C6165Pcla6.tOMBORn69.WOrkErS.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "fujrdt.d6f54hd1j.cc",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/tr/TXGYPKAmg2T9agqYRDFm?ed=2560",
+        "path": "/",
         "headers": {
-          "Host": "022xw1dmczg0c6165pcla6.tomborn69.workers.dev"
+          "Host": "fujrdt.d6f54hd1j.cc"
         }
       }
     },
@@ -34,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
