@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 185.103.110.66
-  port: 18280
+  server: 87.58.149.117
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  type: vless
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EqN5QtvWGccdkmL5ZNVDBRxRhWgr6g_vr3ABT8Q2dW4
+    short-id: ff0ddf949624ef2a
+  servername: freefl.aiage.work
+  client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 152.233.71.81
   port: 443
@@ -25,37 +31,6 @@ proxies:
   servername: brointelengence.com
   client-fingerprint: random
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 87.58.149.117
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: EqN5QtvWGccdkmL5ZNVDBRxRhWgr6g_vr3ABT8Q2dW4
-    short-id: ff0ddf949624ef2a
-  servername: freefl.aiage.work
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 95.216.27.15
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: edge10.cyrionflare.com
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
   server: 196.196.206.36
   port: 443
   udp: true
@@ -67,6 +42,38 @@ proxies:
     public-key: III2StgFziJtisbaKDYlEF2qYwBHJZnzZH5DHdwuFQ8
     short-id: d110331f200987ae
   servername: finaluty.loknietotop.digital
+  client-fingerprint: random
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: 45.133.151.173
+  port: 25550
+  udp: true
+  type: vless
+  uuid: 83383473-0d62-4089-ac4d-d7ecb413504a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 2NETEB242BYUAfGq2zfFjqI2XtnKGGA4O4RUdvCuSHM
+    short-id: 6f5c241c3a917c66
+  servername: cdn.jsdelivr.net
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  server: edge10.cyrionflare.com
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  server: 31.76.102.60
+  port: 443
+  udp: true
+  type: vless
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: KHRzAlZ3DEIjxqfixi545KJ4BpTsefHlO8nCZxdtj34
+    short-id: dee20bb2421604f8
+  servername: fl1.nztvpn.com
   client-fingerprint: random
 proxy-groups:
 - name: PROXIES

@@ -12,7 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "adapting-basilisk.rooster465.autos",
-        "insecure": false
+        "insecure": true
       }
     },
     {
@@ -24,7 +24,7 @@
       "tls": {
         "enabled": true,
         "server_name": "master-possum.rooster465.autos",
-        "insecure": false
+        "insecure": true
       }
     },
     {
