@@ -29,18 +29,6 @@ proxies:
     headers:
       Host: 152.67.8.205
 - name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: 194.61.31.126
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  tls: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 04 - xiaohe
   server: in.tronsg.com
   port: 443
   udp: true
@@ -48,19 +36,6 @@ proxies:
   password: Trojan@82164024
   sni: in.tronsg.com
   skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 05 - xiaohe
-  server: hk03.ccdn3.work
-  port: 753
-  udp: true
-  type: vless
-  uuid: fc12fb20-4380-11ec-8c97-d707e267af0b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: y3AAdi1d5zRrTb_pm-DJWsoP-srtEzYP2P8XxmvbkhQ
-    short-id: 4b8ad8fe52fca1a0
-  servername: i1.hdslb.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,8 +44,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - xiaohe
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
-  - 🇮🇳 印度 (India) 04 - xiaohe
-  - 🇮🇳 印度 (India) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,7 +52,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - xiaohe
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
-  - 🇮🇳 印度 (India) 04 - xiaohe
-  - 🇮🇳 印度 (India) 05 - xiaohe
 rules:
 - MATCH,PROXIES
