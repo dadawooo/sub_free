@@ -38,12 +38,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 03 - xiaohe",
+      "server": "platform102.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform102",
+        "headers": {
+          "Host": "platform102.halalkhor.info"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-        "🇧🇷 巴西 (Brazil) 02 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 02 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 03 - xiaohe"
       ]
     },
     {
@@ -51,7 +66,8 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-        "🇧🇷 巴西 (Brazil) 02 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 02 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
