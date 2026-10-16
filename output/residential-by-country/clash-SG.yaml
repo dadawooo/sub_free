@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.33.59
+- name: 🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe
+  server: 152.70.253.44
   port: 443
   udp: true
   type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
   tls: true
-  servername: jp3.yohototo.top
+  servername: wzs.echo.net.eu.org
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c
     headers:
-      Host: jp3.yohototo.top
+      Host: wzs.echo.net.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
