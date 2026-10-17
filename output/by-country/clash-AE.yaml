@@ -26,8 +26,23 @@ proxies:
     public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
     short-id: 06e00e7c
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: randomized
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  server: 31.59.210.26
+  port: 2088
+  udp: true
+  type: vless
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
+  tls: true
+  reality-opts:
+    public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
+    short-id: b1ad165f903c62fe
+  servername: www.yandex.ru
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: astracat
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   server: 31.59.210.32
   port: 443
   udp: true
@@ -42,15 +57,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   server: 45.59.120.217
   port: 443
@@ -64,48 +70,40 @@ proxies:
   servername: strm.yandex.net
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  server: mog.keyblack.site
-  port: 8444
+  server: 185.253.116.33
+  port: 14430
   udp: true
   type: vless
-  uuid: ef8c7169-87fc-49ad-be91-1f3984ab446d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DQGwrxOgoiyBDrbdFUofP88FGtxHDA2duzNXKkyxaig
-    short-id: 6ba85179e30d4fc2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 185.253.116.33
 - name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  server: 31.59.210.26
-  port: 2088
+  server: 157.228.132.79
+  port: 2054
   udp: true
   type: vless
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
+  uuid: cdc72f62-1697-4644-b5a9-ca6308584c86
   tls: true
   reality-opts:
-    public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
-    short-id: b1ad165f903c62fe
-  servername: www.yandex.ru
-  client-fingerprint: safari
+    public-key: UgJ0ENqGGX-ch2mLdRZiw67OhU3Dqz7rDYCPKcdnn0w
+    short-id: d3d9e08a74807928
+  servername: cloud.ibm.com
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
-    grpc-service-name: astracat
+    grpc-service-name: grpc
 - name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
-  server: 31.59.210.37
-  port: 443
+  server: uae.unixzone.us
+  port: 22573
   udp: true
   type: vless
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
-  tls: true
-  reality-opts:
-    public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
-    short-id: 6dbf4931096f9890
-  servername: www.yandex.ru
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: astracat
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
