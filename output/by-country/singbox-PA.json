@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇻🇳 越南 (Vietnam) 01 - xiaohe",
-      "server": "172.67.168.158",
-      "server_port": 2087,
-      "uuid": "1d0e8e53-6999-4752-ac21-c0c54ff5bc09",
+      "tag": "🇵🇦 PA 01 - xiaohe",
+      "server": "50.117.15.225",
+      "server_port": 443,
+      "uuid": "67eb6b17-7797-4ded-bf52-423c4c5f6cbd",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "vn11vina.210z.dev",
-        "insecure": false,
+        "server_name": "www.foxsports.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vlessvina",
-        "headers": {
-          "Host": "vn11vina.210z.dev"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "G7bpUPFSW28-oE6ff8qZac1_apU6PiJ-GHmi7tAPDSY",
+          "short_id": "91af08b1ce1f"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
+        "🇵🇦 PA 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
+        "🇵🇦 PA 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
