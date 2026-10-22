@@ -5,7 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇳 CN 01 - xiaohe
-  server: vpn.cintaku.qzz.io
+  server: 120.48.133.162
+  port: 10086
+  udp: true
+  type: vmess
+  uuid: a01e5d56-464f-45b9-b600-164db4700162
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇨🇳 CN 02 - xiaohe
+  server: 188.114.98.0
   port: 443
   udp: true
   type: vless
@@ -13,7 +24,7 @@ proxies:
   tls: true
   servername: vpn.cintaku.qzz.io
   skip-cert-verify: false
-  client-fingerprint: safari
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /vlessws
@@ -25,11 +36,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇳 CN 01 - xiaohe
+  - 🇨🇳 CN 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇳 CN 01 - xiaohe
+  - 🇨🇳 CN 02 - xiaohe
 rules:
 - MATCH,PROXIES
