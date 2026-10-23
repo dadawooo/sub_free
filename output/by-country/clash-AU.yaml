@@ -18,16 +18,13 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
-  server: forwarded.frnhk.xyz
-  port: 46004
+  server: 38.110.1.246
+  port: 18000
   udp: true
-  type: vless
-  uuid: 3c5f522d-6695-474f-abcf-2b1a65d503fa
-  network: ws
-  ws-opts:
-    path: /aus1023
-    headers:
-      Host: forwarded.frnhk.xyz
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select

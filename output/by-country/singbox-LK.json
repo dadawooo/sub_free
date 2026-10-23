@@ -5,13 +5,16 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe",
+      "server": "free.sahanwickramasinghe.me",
+      "server_port": 80,
+      "uuid": "fcdb24e3-5e66-4c45-b89e-ac9441f4dcda",
       "transport": {
         "type": "ws",
-        "path": "/vless"
+        "path": "/",
+        "headers": {
+          "Host": "free.sahanwickramasinghe.me"
+        }
       }
     },
     {
@@ -19,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,6 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
+  server: 13.140.56.100
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇮🇳 印度 (India) 02 - xiaohe
   server: 165.99.222.161
   port: 443
   udp: true
@@ -15,15 +24,7 @@ proxies:
   reality-opts:
     public-key: SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4
   servername: in1.vkusnews.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: in.tronsg.com
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: in.tronsg.com
-  skip-cert-verify: true
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 03 - xiaohe
   server: in.smrtai.top
   port: 443
@@ -35,17 +36,8 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
     short-id: 6bdc8320
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇳 印度 (India) 04 - xiaohe
-  server: 13.140.56.100
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇮🇳 印度 (India) 05 - xiaohe
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -57,6 +49,19 @@ proxies:
     short-id: 9980e0609b0d3891
   servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 05 - xiaohe
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: in-152.67.8.205-0250
 proxy-groups:
 - name: PROXIES
   type: select

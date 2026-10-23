@@ -25,18 +25,12 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-      "server": "forwarded.frnhk.xyz",
-      "server_port": 46004,
-      "uuid": "3c5f522d-6695-474f-abcf-2b1a65d503fa",
-      "transport": {
-        "type": "ws",
-        "path": "/aus1023",
-        "headers": {
-          "Host": "forwarded.frnhk.xyz"
-        }
-      }
+      "server": "38.110.1.246",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
     },
     {
       "type": "selector",

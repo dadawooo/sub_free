@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 194.116.236.113
+- name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  server: 144.31.50.236
   port: 443
   udp: true
   type: vless
-  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
-    short-id: 7271129440ade8fa
-  servername: api.mskvibe.fyi
-  client-fingerprint: firefox
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+  servername: yandex.ru
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
 rules:
 - MATCH,PROXIES
