@@ -44,26 +44,22 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-      "server": "finland02.azotvpn.xyz",
-      "server_port": 8443,
-      "uuid": "5a96c1fc-f167-44b9-9020-8f6867537d14",
+      "server": "46.62.204.134",
+      "server_port": 443,
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "finland02.azotvpn.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fQ1M2sO50w5A3oM55Hfs8vmZ320I8VaKdzRqeXOMMnQ",
-          "short_id": "07f508fe5d2355d3"
-        }
+        "server_name": "www.pleadcourt.org",
+        "insecure": false
       },
       "transport": {
-        "type": "grpc"
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        }
       }
     },
     {

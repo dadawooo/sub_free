@@ -31,20 +31,16 @@ proxies:
     headers:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: finland02.azotvpn.xyz
-  port: 8443
+  server: 46.62.204.134
+  port: 443
   udp: true
-  type: vless
-  uuid: 5a96c1fc-f167-44b9-9020-8f6867537d14
-  tls: true
-  reality-opts:
-    public-key: fQ1M2sO50w5A3oM55Hfs8vmZ320I8VaKdzRqeXOMMnQ
-    short-id: 07f508fe5d2355d3
-  servername: finland02.azotvpn.xyz
-  client-fingerprint: ''
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
