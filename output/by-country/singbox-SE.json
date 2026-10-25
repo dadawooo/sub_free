@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
+      "server": "50.7.38.243",
+      "server_port": 443,
+      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
+      "tls": {
+        "enabled": true,
+        "server_name": "promo.betust.net",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
       "server": "91.242.228.29",
       "server_port": 443,
       "uuid": "605dea9b-b485-45c9-af9b-cc2b0195023c",
@@ -22,18 +34,6 @@
           "public_key": "Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E",
           "short_id": "afee962d"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-      "server": "promo.betust.net",
-      "server_port": 443,
-      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
-      "tls": {
-        "enabled": true,
-        "server_name": "promo.betust.net",
-        "insecure": false
       }
     },
     {

@@ -20,17 +20,17 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 151.241.226.201
-  port: 2053
+  server: 45.151.71.164
+  port: 443
   udp: true
   type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: chrome
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: abuse.ozon.ru
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   server: 45.74.159.238
   port: 443

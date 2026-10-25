@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-      "server": "212.227.235.66",
-      "server_port": 2053,
-      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
+      "server": "195.123.227.162",
+      "server_port": 443,
+      "uuid": "7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "zbfkmgdg8.hat.onl",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
-          "short_id": "29e8dcd2b37aaa7f"
+          "fingerprint": "firefox"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "hls-vod.ohql91f.segment-26-v1-a1.ts"
       }
     },
     {
@@ -28,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01 - xiaohe"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01 - xiaohe"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

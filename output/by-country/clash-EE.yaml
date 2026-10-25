@@ -16,33 +16,18 @@ proxies:
     public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
     short-id: afee962d
   servername: ee1.mycloud1.org
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  server: 13.143.239.119
-  port: 443
-  udp: true
-  type: vless
-  uuid: f36c82e2-e33e-4054-960a-34619d9fdd5b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: kYbLeoF13TKNPtlYwRsAqFQR3l7v6NMe6ydARMIfEC0
-    short-id: 7230e3b3f137543c
-  servername: www.transip.nl
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
 rules:
 - MATCH,PROXIES
