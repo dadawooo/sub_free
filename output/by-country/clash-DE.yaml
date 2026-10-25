@@ -5,12 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaohe
-  server: 213.202.208.199
-  port: 7001
+  server: 172.67.130.187
+  port: 2083
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  type: vless
+  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
+  tls: true
+  servername: fans.liverpool.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: fans.liverpool.qzz.io
 - name: 🇩🇪 德国 (Germany) 02 - xiaohe
   server: 31.76.11.83
   port: 22366
@@ -20,19 +28,29 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇩🇪 德国 (Germany) 03 - xiaohe
-  server: 185.176.204.18
-  port: 19999
+  server: 163.245.42.48
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 04 - xiaohe
-  server: 146.70.20.147
-  port: 8080
+  server: 163.245.42.48
+  port: 443
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+  type: vless
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 05 - xiaohe
   server: 185.226.172.8
   port: 8008
@@ -41,32 +59,36 @@ proxies:
   cipher: aes-256-gcm
   password: XKFKl2rULjIp74
 - name: 🇩🇪 德国 (Germany) 06 - xiaohe
-  server: 5.45.100.100
-  port: 51511
+  server: 57.129.41.216
+  port: 80
   udp: true
-  type: hysteria2
-  password: miaoge110
-  sni: 5.45.100.100
-  skip-cert-verify: true
+  type: vless
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 07 - xiaohe
-  server: 31.70.111.146
+  server: 169.150.210.233
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇩🇪 德国 (Germany) 08 - xiaohe
+  server: 66.151.40.159
   port: 443
   udp: true
   type: vless
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
+  uuid: 7ce594b9-918b-441d-922c-230341838abd
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 08 - xiaohe
-  server: test.wecantos.site
-  port: 20000
-  udp: true
-  type: vless
-  uuid: ca59a503-db23-44af-9879-49747d8da98f
+    public-key: Z5c-WDN3JlGoSTDDKNVqKZsBbpwj80-xrM0jlYbgxzo
+    short-id: deb3256cd90dad0b
+  servername: de1.xshoponline.ru
+  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 09 - xiaohe
   server: edge.bookmai.com
   port: 443
@@ -80,28 +102,20 @@ proxies:
   servername: mother-earth.fyi
   client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 10 - xiaohe
-  server: 57.129.41.216
-  port: 80
+  server: 213.202.208.199
+  port: 5000
   udp: true
-  type: vless
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
 - name: 🇩🇪 德国 (Germany) 11 - xiaohe
-  server: 163.245.42.48
+  server: 3.69.232.199
   port: 443
   udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: chrome
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
+  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 12 - xiaohe
   server: connect.wecantos.site
   port: 10000
@@ -109,6 +123,19 @@ proxies:
   type: vless
   uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
 - name: 🇩🇪 德国 (Germany) 13 - xiaohe
+  server: 31.70.111.146
+  port: 443
+  udp: true
+  type: vless
+  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
+    short-id: d7de3a6ff4018957
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 14 - xiaohe
   server: 91.107.247.173
   port: 2083
   udp: true
@@ -123,14 +150,44 @@ proxies:
     path: /
     headers:
       Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 14 - xiaohe
-  server: 213.202.216.117
-  port: 17001
+- name: 🇩🇪 德国 (Germany) 15 - xiaohe
+  server: 201.51.8.163
+  port: 443
+  udp: true
+  type: vless
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+  servername: atk.vkusnews.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 16 - xiaohe
+  server: test.wecantos.site
+  port: 20000
+  udp: true
+  type: vless
+  uuid: ca59a503-db23-44af-9879-49747d8da98f
+- name: 🇩🇪 德国 (Germany) 17 - xiaohe
+  server: web.asasin4.ir
+  port: 1083
+  udp: true
+  type: vless
+  uuid: 99ff1b2f-0322-4f16-92be-c052c20e26cd
+  tls: true
+  reality-opts:
+    public-key: It6jKW82iEJUsJRy1VEeUwSeQu_f4vpqLMh5U8HaHXY
+    short-id: '60410462'
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 18 - xiaohe
+  server: 185.176.204.18
+  port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
-- name: 🇩🇪 德国 (Germany) 15 - xiaohe
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪 德国 (Germany) 19 - xiaohe
   server: 31.77.148.89
   port: 45021
   udp: true
@@ -156,6 +213,10 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 13 - xiaohe
   - 🇩🇪 德国 (Germany) 14 - xiaohe
   - 🇩🇪 德国 (Germany) 15 - xiaohe
+  - 🇩🇪 德国 (Germany) 16 - xiaohe
+  - 🇩🇪 德国 (Germany) 17 - xiaohe
+  - 🇩🇪 德国 (Germany) 18 - xiaohe
+  - 🇩🇪 德国 (Germany) 19 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -176,5 +237,9 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 13 - xiaohe
   - 🇩🇪 德国 (Germany) 14 - xiaohe
   - 🇩🇪 德国 (Germany) 15 - xiaohe
+  - 🇩🇪 德国 (Germany) 16 - xiaohe
+  - 🇩🇪 德国 (Germany) 17 - xiaohe
+  - 🇩🇪 德国 (Germany) 18 - xiaohe
+  - 🇩🇪 德国 (Germany) 19 - xiaohe
 rules:
 - MATCH,PROXIES
