@@ -5,18 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 193.223.104.106
+  server: 45.9.118.177
   port: 8443
   udp: true
   type: vless
-  uuid: dc23cc43-ded8-47d1-b39e-778a6bd7b42f
+  uuid: 88c4ce99-31f1-4329-912d-2a3564b3d58b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  server: 193.160.141.50
+  port: 443
+  udp: true
+  type: vless
+  uuid: 54d1afe5-f5aa-47e6-a02f-6c41a6f886b3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: ozon.ru
+  client-fingerprint: ios
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: 103.91.147.203
   port: 8443
   udp: true
@@ -28,7 +40,7 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: apple.com
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: 147.45.47.83
   port: 443
   udp: true
@@ -40,19 +52,34 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: ozon.ru
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 194.87.143.165
-  port: 8443
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  server: 193.233.221.86
+  port: 443
   udp: true
   type: vless
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  uuid: 37ca5f34-2531-4fda-a781-20f3845fea88
+  flow: xtls-rprx-vision
   tls: true
-  servername: wsru1.wba-pn.ru
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  reality-opts:
+    public-key: 2iedjEliJfyf7VYxQjSHRiY0RY9ylwj-GtO4MCfuQhg
+    short-id: a50534e181896415
+  servername: capableconjuretarnish.clarionconsult.info
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  server: 195.133.5.107
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  server: 91.206.92.238
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   server: xsru1.ddnsfree.com
   port: 443
   udp: true
@@ -65,20 +92,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 94.228.167.12
-  port: 443
-  udp: true
-  type: vless
-  uuid: 37ca5f34-2531-4fda-a781-20f3845fea88
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: dCaQHVtwEPBeiH3ivVU9ycGJZ8uCO2JaIVjYBnfaTWY
-    short-id: c13c9bd7bd45847d
-  servername: washingphonicseatable.solsticedigest.me
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
   server: 147.45.175.81
   port: 443
   udp: true
@@ -93,19 +107,40 @@ proxies:
     path: /wsru
     headers:
       Host: xsru2.freeddns.org
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  server: 193.233.221.86
-  port: 443
+- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
+  server: 185.147.27.164
+  port: 8443
   udp: true
   type: vless
-  uuid: 37ca5f34-2531-4fda-a781-20f3845fea88
+  uuid: 3a90bf69-1ffe-4ebb-b9a7-ad9ba8e9f66f
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: 2iedjEliJfyf7VYxQjSHRiY0RY9ylwj-GtO4MCfuQhg
-    short-id: a50534e181896415
-  servername: capableconjuretarnish.clarionconsult.info
+  servername: speedtest.net
+  skip-cert-verify: true
   client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
+  server: 185.147.27.183
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 379998c5-2a71-4202-9c74-522e0c3c5404
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ekb.eg
+  skip-cert-verify: true
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
+  server: 45.12.75.242
+  port: 26424
+  udp: true
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -119,6 +154,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -132,5 +171,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
 rules:
 - MATCH,PROXIES
