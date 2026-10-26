@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 01 (家宽) - xiaohe",
-      "server": "122.176.216.52",
-      "server_port": 443,
-      "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
+      "server": "13.143.239.69",
+      "server_port": 8443,
+      "uuid": "2b0e5676-fb62-4bf0-9607-6e7818421e8e",
       "tls": {
         "enabled": true,
-        "server_name": "app-6ada5023.deploy.meerasolution.com",
+        "server_name": "ee4.pad-sservice.lat",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+        "path": "/EE4W",
         "headers": {
-          "Host": "app-6ada5023.deploy.meerasolution.com"
+          "Host": "ee4.pad-sservice.lat"
         }
       }
     },
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 (家宽) - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 (家宽) - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

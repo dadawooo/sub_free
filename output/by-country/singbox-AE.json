@@ -11,10 +11,7 @@
       "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
       "transport": {
         "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "185.253.116.33"
-        }
+        "path": "/vless"
       }
     },
     {
@@ -34,17 +31,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
-      "server": "95.174.68.188",
-      "server_port": 14430,
-      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "95.174.68.188"
-        }
+      "server": "217.60.72.225",
+      "server_port": 443,
+      "password": "329e13e4-ee7c-4802-ac72-5fcab79c2402",
+      "tls": {
+        "enabled": true,
+        "server_name": "forshynewh.duckdns.org",
+        "insecure": false
       }
     },
     {
@@ -55,6 +50,7 @@
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
         "type": "ws",
+        "path": "/",
         "headers": {
           "Host": "uae.unixzone.us"
         }
