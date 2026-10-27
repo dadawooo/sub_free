@@ -5,13 +5,14 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇵🇭 菲律宾 (Philippines) 01 - xiaohe",
-      "server": "130.94.53.51",
-      "server_port": 15656,
-      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
+      "server": "ir-new-ded.failspace.top",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ph001.zestapp778.com",
+        "server_name": "ir-new-ded.failspace.top",
         "insecure": false
       }
     },
@@ -20,14 +21,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇭 菲律宾 (Philippines) 01 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇭 菲律宾 (Philippines) 01 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
