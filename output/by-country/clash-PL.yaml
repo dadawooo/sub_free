@@ -11,7 +11,7 @@ proxies:
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: pl1.obxodvpn.us
+  server: 191.217.251.225
   port: 4443
   udp: true
   type: hysteria2
@@ -19,17 +19,16 @@ proxies:
   sni: nl1.obxodvpn.us
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: pl5.h1cloud.net
-  port: 25548
+  server: poland-new-new.failspace.top
+  port: 443
   udp: true
   type: vless
-  uuid: 5a519754-a673-4462-83f6-5eb25d2af141
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: lceynvFy326oU4ew9OPR7079m-L5ZcFELgCl0sqxU2M
-    short-id: bceb5b2197b76818
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: poland-new-new.failspace.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   server: site.teslamotor.site
   port: 20001
@@ -45,22 +44,11 @@ proxies:
   tls: true
   servername: ru1.radiolumens.uk
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: beru-pl
 - name: 🇵🇱 波兰 (Poland) 06 - xiaohe
-  server: poland-new-new.failspace.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: poland-new-new.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
   server: 54.37.131.126
   port: 80
   udp: true
@@ -73,7 +61,7 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
   server: 2.26.6.1
   port: 2087
   udp: true
@@ -83,19 +71,6 @@ proxies:
   servername: 2.26.6.1
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
-  server: 45.148.119.127
-  port: 443
-  udp: true
-  type: vless
-  uuid: 329e13e4-ee7c-4802-ac72-5fcab79c2402
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
-    short-id: '50'
-  servername: cloudflare.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -108,8 +83,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
-  - 🇵🇱 波兰 (Poland) 08 - xiaohe
-  - 🇵🇱 波兰 (Poland) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -122,7 +95,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
-  - 🇵🇱 波兰 (Poland) 08 - xiaohe
-  - 🇵🇱 波兰 (Poland) 09 - xiaohe
 rules:
 - MATCH,PROXIES
