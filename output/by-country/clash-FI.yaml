@@ -5,39 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 2.27.13.152
-  port: 8443
+  server: helsinki03.npvnot.com
+  port: 995
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: MjNhN2QwNmFlYTRlZGMxNWVlOTI0MGI0MTU4MDY1
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  flow: xtls-rprx-vision
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   tls: true
   reality-opts:
-    public-key: 14YyFG_j2yPEUu-gO_G9GqCqRiZ0DIUgzReV9CZvOAk
-    short-id: 0f47ff9aa15e3e30
-  servername: www.nokia.com
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: fl2.nexfile.net
-  port: 4444
-  udp: true
-  type: hysteria2
-  password: 10be1dad-9952-4c5e-aa30-db435f69b727
-  sni: fl2.nexfile.net
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 65.109.212.193
+  server: hw3.divarkhaghazi.com
   port: 465
   udp: true
   type: vless
@@ -51,21 +38,17 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 77.42.12.225
-  port: 443
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: 45.144.234.157
+  port: 14430
   udp: true
   type: vless
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  tls: true
-  reality-opts:
-    public-key: GJzag9Wrvz_bO9AQaA-Oq0P1kV9btmxxAdzPV-uQB18
-    short-id: 09d0a94a1c6fc9d5
-  servername: 8fc752g.fi3.h1clayd.click
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: f345a414c040
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,7 +58,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -85,6 +67,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 rules:
 - MATCH,PROXIES

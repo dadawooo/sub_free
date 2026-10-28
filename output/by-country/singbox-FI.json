@@ -4,56 +4,37 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "2.27.13.152",
-      "server_port": 8443,
-      "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
-      "flow": "xtls-rprx-vision",
+      "server": "helsinki03.npvnot.com",
+      "server_port": 995,
+      "method": "aes-256-gcm",
+      "password": "MjNhN2QwNmFlYTRlZGMxNWVlOTI0MGI0MTU4MDY1"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "server": "95.216.27.15",
+      "server_port": 2053,
+      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
       "tls": {
         "enabled": true,
-        "server_name": "www.nokia.com",
+        "server_name": "www.google.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "14YyFG_j2yPEUu-gO_G9GqCqRiZ0DIUgzReV9CZvOAk",
-          "short_id": "0f47ff9aa15e3e30"
+          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
+          "short_id": "d368b94e275ab080"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "45.144.234.157"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-      "server": "fl2.nexfile.net",
-      "server_port": 4444,
-      "password": "10be1dad-9952-4c5e-aa30-db435f69b727",
-      "tls": {
-        "enabled": true,
-        "server_name": "fl2.nexfile.net",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
-      "server": "65.109.212.193",
+      "server": "hw3.divarkhaghazi.com",
       "server_port": 465,
       "uuid": "924e20da-fcad-4e7e-8113-c62d27a0d01e",
       "tls": {
@@ -78,26 +59,16 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - xiaohe",
-      "server": "77.42.12.225",
-      "server_port": 443,
-      "uuid": "056405e8-de9f-4d0d-8145-956f13cc34da",
-      "tls": {
-        "enabled": true,
-        "server_name": "8fc752g.fi3.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GJzag9Wrvz_bO9AQaA-Oq0P1kV9btmxxAdzPV-uQB18",
-          "short_id": "09d0a94a1c6fc9d5"
-        }
-      },
+      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
       "transport": {
-        "type": "grpc",
-        "service_name": "f345a414c040"
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
+        }
       }
     },
     {
@@ -108,8 +79,7 @@
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
         "🇫🇮 芬兰 (Finland) 02 - xiaohe",
         "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 04 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 05 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 04 - xiaohe"
       ]
     },
     {
@@ -119,8 +89,7 @@
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
         "🇫🇮 芬兰 (Finland) 02 - xiaohe",
         "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 04 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 05 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
