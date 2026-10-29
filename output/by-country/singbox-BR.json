@@ -4,19 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
-      "server": "5.253.29.253",
+      "type": "trojan",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+      "server": "216.238.104.154",
       "server_port": 443,
-      "uuid": "76ef5ab3-7075-4e23-b445-f3b1bd05d431",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "indi.qikbro.com",
+        "server_name": "findtemporaryworkandfreelancerprojectsonlineplatform.com",
         "insecure": false
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "assets"
       }
     },
     {
@@ -24,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

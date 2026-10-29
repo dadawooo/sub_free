@@ -1,0 +1,46 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  server: 93.152.223.244
+  port: 443
+  udp: true
+  type: vless
+  uuid: 706bce83-91db-4260-b175-cba29145cd56
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: yKwDGqOdkC_nEPOQHMvAQLPcPK8YHskv_opYoY66Yk8
+  servername: ddk5-ger.newagetechnologies.live
+  client-fingerprint: qq
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
+  server: p1real4.greewebservices.ir
+  port: 1260
+  udp: true
+  type: vless
+  uuid: f234330e-f9df-46e3-8f60-b2af5173c147
+  tls: true
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: 9b60d3
+  servername: play.googleapis.com
+  client-fingerprint: ios
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
+rules:
+- MATCH,PROXIES

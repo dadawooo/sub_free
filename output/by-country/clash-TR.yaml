@@ -5,29 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 153.52.92.43
+  server: free.ertebatgoostar.ir
   port: 443
   udp: true
   type: vmess
-  uuid: 2dd46701-dc47-5cad-997e-0a770090b178
+  uuid: 118b0abc-c8f6-476a-9777-bc73f6e2548b
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   server: 62.133.63.45
   port: 8444
   udp: true
@@ -42,19 +27,18 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  server: 206.1.101.85
-  port: 42654
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  server: 151.241.226.201
+  port: 2053
   udp: true
   type: vless
-  uuid: 893845c5-8e4a-48d5-8a85-622f5b7ea950
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
   tls: true
-  servername: 206.1.101.85
-  skip-cert-verify: false
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,7 +47,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,6 +55,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
 rules:
 - MATCH,PROXIES

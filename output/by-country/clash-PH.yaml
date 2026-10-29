@@ -13,7 +13,7 @@ proxies:
   tls: true
   servername: ph001.zestapp778.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇵🇭 菲律宾 (Philippines) 02 - xiaohe
   server: ph001.zestapp778.com
   port: 46293
