@@ -13,7 +13,6 @@ proxies:
   tls: true
   servername: indi.qikbro.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: assets
