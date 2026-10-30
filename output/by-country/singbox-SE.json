@@ -4,8 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
+      "server": "91.196.33.157",
+      "server_port": 443,
+      "uuid": "7b22dce8-7ebd-425b-8ca4-7b6190321985",
+      "tls": {
+        "enabled": true,
+        "server_name": "b.us-1.bnc-gt.co.uk",
+        "insecure": false
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
       "server": "50.7.38.243",
       "server_port": 443,
       "password": "d4ca9415f0eac7897472e1e5b86d2e96",
@@ -17,7 +33,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
       "server": "5.178.109.174",
       "server_port": 14430,
       "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
@@ -27,18 +43,6 @@
         "headers": {
           "Host": "5.178.109.174"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-      "server": "192.142.23.46",
-      "server_port": 443,
-      "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
-      "tls": {
-        "enabled": true,
-        "server_name": "diffoscope.com",
-        "insecure": false
       }
     },
     {
@@ -63,24 +67,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
-      "server": "13.143.180.104",
+      "server": "192.142.23.46",
       "server_port": 443,
-      "uuid": "a0fa7e19-70ec-41e0-b0cc-bcc984d4201a",
-      "flow": "xtls-rprx-vision",
+      "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
       "tls": {
         "enabled": true,
-        "server_name": "s12.bsh-net.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QvT-t_h_AF2EAT4Ggh_a6pcCK3StY8G9WCXn6-dJbxk",
-          "short_id": "51079f144d661484"
-        }
+        "server_name": "diffoscope.com",
+        "insecure": false
       }
     },
     {
