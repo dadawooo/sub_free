@@ -30,7 +30,7 @@ proxies:
   type: hysteria2
   password: a0052f4f-4c63-0002-a16f-ab2d5d718cd3
   sni: diffoscope.com
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   server: 31.172.65.4
   port: 8443
@@ -44,6 +44,19 @@ proxies:
     short-id: 0e7741edc378622f
   servername: www.bing.com
   client-fingerprint: qq
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  server: 13.143.180.104
+  port: 443
+  udp: true
+  type: vless
+  uuid: a0fa7e19-70ec-41e0-b0cc-bcc984d4201a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QvT-t_h_AF2EAT4Ggh_a6pcCK3StY8G9WCXn6-dJbxk
+    short-id: 51079f144d661484
+  servername: s12.bsh-net.ru
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,6 +66,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,5 +76,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
 rules:
 - MATCH,PROXIES
