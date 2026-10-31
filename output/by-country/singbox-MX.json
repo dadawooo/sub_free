@@ -12,7 +12,11 @@
       "tls": {
         "enabled": true,
         "server_name": "connectwithtopemployersandfindidealjobs.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -24,7 +28,7 @@
       "tls": {
         "enabled": true,
         "server_name": "mx001.zestapp778.com",
-        "insecure": true
+        "insecure": false
       }
     },
     {
