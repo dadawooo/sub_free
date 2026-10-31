@@ -5,18 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 65.109.210.221
+  server: hw3.divarkhaghazi.com.
   port: 465
   udp: true
   type: vless
@@ -28,9 +17,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 65.109.211.81
   port: 465
   udp: true
@@ -52,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 rules:
 - MATCH,PROXIES

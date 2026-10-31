@@ -11,35 +11,22 @@
       "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
       "transport": {
         "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "95.174.68.188"
-        }
+        "path": "/vless"
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
-      "server": "178.253.16.185",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "x2A6AsyZ-rAllz0wbKHzWA"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 02 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 02 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
