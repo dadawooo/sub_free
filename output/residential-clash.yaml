@@ -11,7 +11,18 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇮🇳 印度 (India) 02 (家宽) - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  server: 0e05f970-tki800-traezq-1t5n1.hk2.hyhuawei.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
+  tls: true
+  reality-opts:
+    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
+  servername: download.windowsupdate.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 03 (家宽) - xiaohe
   server: 122.176.216.52
   port: 443
   udp: true
@@ -32,13 +43,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇮🇳 印度 (India) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  - 🇮🇳 印度 (India) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇮🇳 印度 (India) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  - 🇮🇳 印度 (India) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
