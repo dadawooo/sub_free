@@ -4,28 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
-      "server": "185.178.208.167",
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "104.21.15.251",
       "server_port": 443,
-      "uuid": "2232d904-8e6a-4202-8240-6efd8aec02e9",
+      "uuid": "ba1116e2-8c2f-4e3d-8e50-c954360cf970",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "lorettmay.top",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "server_name": "www.windowssearchtools.com",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/blog/posts",
+        "path": "/truth",
         "headers": {
-          "Host": "lorettmay.top"
+          "Host": "www.windowssearchtools.com"
         }
       }
     },
@@ -34,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
