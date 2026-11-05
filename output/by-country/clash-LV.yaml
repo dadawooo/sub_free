@@ -17,27 +17,17 @@ proxies:
     short-id: 33acba1b
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
-  server: 95.182.115.178
-  port: 443
-  udp: true
-  type: vmess
-  uuid: db753334-5fd1-472b-b3e0-458bc2189c58
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
 rules:
 - MATCH,PROXIES
