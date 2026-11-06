@@ -13,7 +13,7 @@ proxies:
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: ru1.radiolumens.uk
+  server: 77.232.135.141
   port: 8445
   udp: true
   type: vless
