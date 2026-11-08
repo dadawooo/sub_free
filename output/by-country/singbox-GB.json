@@ -22,18 +22,18 @@
     {
       "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
-      "server": "142.202.51.22",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 04 - xiaohe",
       "server": "141.98.101.181",
       "server_port": 443,
       "method": "aes-128-gcm",
       "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 04 - xiaohe",
+      "server": "142.202.51.22",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "shadowsocks",
@@ -54,27 +54,6 @@
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 07 - xiaohe",
-      "server": "191.44.108.31",
-      "server_port": 443,
-      "uuid": "558b26f6-061b-4079-9b84-ca13b3e90ae3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QLh2Y5Ig7pncEIvOYpZlLH2rUHZ3CRuyAo1A_emWZQU",
-          "short_id": "3ba10d9ce34380c9"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 08 - xiaohe",
       "server": "51.89.194.151",
       "server_port": 2053,
       "uuid": "8e790f25-1d71-4601-9fb0-d503931dcfca",
@@ -94,7 +73,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 09 - xiaohe",
+      "tag": "🇬🇧 英国 (United Kingdom) 08 - xiaohe",
       "server": "98.98.142.161",
       "server_port": 8080,
       "method": "rc4-md5",
@@ -102,7 +81,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 10 - xiaohe",
+      "tag": "🇬🇧 英国 (United Kingdom) 09 - xiaohe",
       "server": "138.124.125.193",
       "server_port": 10444,
       "uuid": "e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4",
@@ -122,16 +101,31 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 10 - xiaohe",
+      "server": "94.156.250.148",
+      "server_port": 7001,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
+    },
+    {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 11 - xiaohe",
-      "server": "193.188.21.253",
-      "server_port": 14430,
-      "uuid": "57f7772d-f5d6-4d8f-992d-5fa5e0d6da55",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "193.188.21.253"
+      "server": "107.181.151.128",
+      "server_port": 443,
+      "uuid": "88742d38-3f5c-4b9c-b256-7df5db8257ec",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s",
+          "short_id": "8f79726c5002"
         }
       }
     },
@@ -156,51 +150,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 13 - xiaohe",
-      "server": "82.148.255.201",
-      "server_port": 8444,
-      "uuid": "49fdd350-6ffb-4343-b467-14e269bb95de",
-      "tls": {
-        "enabled": true,
-        "server_name": "360.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DvNpCmas0_0MO91s70vlkAxZxnnIt1NE0zqCC4trURQ",
-          "short_id": "2bf10fc0a85601e5"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-reality"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 14 - xiaohe",
-      "server": "107.181.151.128",
-      "server_port": 443,
-      "uuid": "88742d38-3f5c-4b9c-b256-7df5db8257ec",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s",
-          "short_id": "8f79726c5002"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -216,9 +165,7 @@
         "🇬🇧 英国 (United Kingdom) 09 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 10 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 11 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 12 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 13 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 14 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 12 - xiaohe"
       ]
     },
     {
@@ -236,9 +183,7 @@
         "🇬🇧 英国 (United Kingdom) 09 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 10 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 11 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 12 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 13 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 14 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 12 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
