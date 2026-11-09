@@ -1,0 +1,57 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "trojan",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
+      "server": "172.66.47.158",
+      "server_port": 443,
+      "password": "Nd2bFutZK2ma29bYqC@z",
+      "tls": {
+        "enabled": true,
+        "server_name": "4oKhrijUyjyTFlnvoWhL3ZFW5wSGI34O.PAGeS.DeV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tr/2W6ONoBA1CTMk80znuAVgQ9dvWey2KD8?ed=2560",
+        "headers": {
+          "Host": "4okhrijuyjytflnvowhl3zfw5wsgi34o.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

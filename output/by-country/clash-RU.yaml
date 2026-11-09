@@ -18,7 +18,7 @@ proxies:
   servername: golos.mail.ru
   client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 201.8.71.59
+  server: steel7.hadsvpn.com
   port: 443
   udp: true
   type: hysteria2
@@ -26,12 +26,18 @@ proxies:
   sni: steel7.hadsvpn.com
   skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 130.49.189.158
-  port: 43558
+  server: 185.215.184.85
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: dvizhok.su
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: 201.24.121.243
   port: 443
@@ -46,27 +52,21 @@ proxies:
   grpc-opts:
     grpc-service-name: vlgrpc
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: 46.17.47.58
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: ee.subv.ru
-  port: 443
+  server: 193.233.253.180
+  port: 8444
   udp: true
   type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
   tls: true
   reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: dvizhok.su
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  server: prvtch.titun.su
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  server: 46.19.138.214
   port: 443
   udp: true
   type: vless
@@ -77,8 +77,8 @@ proxies:
     public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
     short-id: 428ef87fd47a3a32
   servername: perevodchiki.su
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   server: 38.60.223.125
   port: 13108
   udp: true
@@ -97,7 +97,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,6 +109,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
 rules:
 - MATCH,PROXIES
