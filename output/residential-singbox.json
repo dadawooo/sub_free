@@ -4,26 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe",
-      "server": "87.228.61.175",
-      "server_port": 1443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "tAGGzgRCi6W95UwG0qerf6"
+      "type": "vmess",
+      "tag": "🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe",
+      "server": "116.88.224.217",
+      "server_port": 8080,
+      "uuid": "6f4f0eb5-fe86-41ca-eccb-a6ca68f88d9b",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
