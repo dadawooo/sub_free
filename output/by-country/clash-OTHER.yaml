@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇺 匈牙利 (Hungary) 01 - xiaohe
-  server: 172.67.131.125
-  port: 2083
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  server: 172.67.199.126
+  port: 2053
   udp: true
   type: vless
-  uuid: f418674e-f518-4318-8ff9-e10000000046
+  uuid: c83f15bf-1817-4ec8-a19f-6393d226434c
   tls: true
-  servername: smart-edge-424.arti98399-1905.workers.dev
+  servername: fast.145779.xyz
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /syncfp=chrome
+    path: /ws-tesla
     headers:
-      Host: smart-edge-424.arti98399-1905.workers.dev
+      Host: fast.145779.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇺 匈牙利 (Hungary) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇺 匈牙利 (Hungary) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 rules:
 - MATCH,PROXIES
