@@ -6,9 +6,22 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "87.76.154.28",
-      "server_port": 57231,
-      "uuid": "c34a41b6-598f-46ac-bea3-8b39a906f922"
+      "server": "198.105.123.253",
+      "server_port": 2058,
+      "uuid": "83be8a03-cbed-4fca-8403-37fc21793159",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "Tx1.qoqnusradio.top",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
     },
     {
       "type": "selector",

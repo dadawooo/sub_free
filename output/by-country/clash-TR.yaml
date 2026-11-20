@@ -5,11 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 87.76.154.28
-  port: 57231
+  server: 198.105.123.253
+  port: 2058
   udp: true
   type: vless
-  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
+  uuid: 83be8a03-cbed-4fca-8403-37fc21793159
+  flow: xtls-rprx-vision
+  tls: true
+  servername: Tx1.qoqnusradio.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
