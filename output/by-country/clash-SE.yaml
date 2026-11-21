@@ -47,7 +47,7 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: 95.143.196.32
+  server: 95.143.196.97
   port: 443
   udp: true
   type: trojan
