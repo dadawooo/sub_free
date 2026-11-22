@@ -6,23 +6,19 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "172.67.139.189",
+      "server": "104.17.50.53",
       "server_port": 443,
-      "uuid": "364D2D52-E61E-4E52-80EC-2BC6BDF15349",
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "fr-free.fastestrelay.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        }
+        "server_name": "jp3.yohototo.top",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/700gvl",
+        "path": "/tyxyws",
         "headers": {
-          "Host": "fr-free.fastestrelay.com"
+          "Host": "jp3.yohototo.top"
         }
       }
     },
