@@ -5,30 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 130.94.2.227
-  port: 443
+  server: 143.246.136.128
+  port: 50738
   udp: true
   type: vless
-  uuid: 3a1c6827-72a1-4d1c-9413-44109ff815f4
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
   tls: true
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  servername: navi.bankrate.com
+  servername: turkey-ip1.mmdaqaorg.xyz
+  skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 188.225.78.178
+  server: 172.64.155.209
   port: 443
   udp: true
   type: vless
-  uuid: a4740bee-81ad-4a58-99c9-eca576ecb6e6
+  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
   tls: true
-  servername: cadrin.wtf
+  servername: sinavm3.soft10.ir
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cache.sync.v1
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    headers:
+      Host: sinavm3.soft10.ir
 proxy-groups:
 - name: PROXIES
   type: select
