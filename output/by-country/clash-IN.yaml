@@ -5,16 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
-  server: 13.140.56.100
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: 178.212.35.198
+  server: in.smrtai.top
   port: 443
   udp: true
   type: vless
@@ -24,22 +15,33 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
     short-id: 6bdc8320
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: 147.93.171.8
-  port: 8443
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 02 - xiaohe
+  server: 13.140.56.100
+  port: 14430
   udp: true
   type: vless
-  uuid: 591e7de6-f2dd-4ff9-ae21-8e00d5affa2a
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 03 - xiaohe
+  server: 13.140.74.242
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06a5afa1-2bbc-a5d1-1770-becd1089c636
   tls: true
-  servername: 147-93-171-8.sslip.io
+  servername: xray-dmr3b3hy-calm-maple-7.cloady.io
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vpn-live
+    path: /0175469f14317d82
     headers:
-      Host: 147-93-171-8.sslip.io
+      Host: xray-dmr3b3hy-calm-maple-7.cloady.io
 proxy-groups:
 - name: PROXIES
   type: select
